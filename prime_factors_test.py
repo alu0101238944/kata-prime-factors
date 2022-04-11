@@ -24,5 +24,8 @@ class FizzBuzzTests(unittest.TestCase):
       result = self.prime_factors.factorize(i)
       self.assertEqual(i, numpy.prod(result))
 
+  def test_fifty_has_two_and_five_twice_as_prime_factors(self):
+    self.assertEqual(self.prime_factors.factorize(50), [2, 5, 5])
+    
 if __name__ == '__main__':
   unittest.main()
