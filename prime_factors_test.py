@@ -26,6 +26,10 @@ class FizzBuzzTests(unittest.TestCase):
 
   def test_fifty_has_two_and_five_twice_as_prime_factors(self):
     self.assertEqual(self.prime_factors.factorize(50), [2, 5, 5])
-    
+
+  def test_a_big_prime_number_has_only_itself_as_prime_factor(self):
+    big_prime_number = 104729
+    self.assertEqual(self.prime_factors.factorize(big_prime_number), [big_prime_number])
+
 if __name__ == '__main__':
   unittest.main()
