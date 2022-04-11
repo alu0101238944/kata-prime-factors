@@ -15,5 +15,8 @@ class FizzBuzzTests(unittest.TestCase):
   def test_three_has_only_itself_as_prime_factor(self):
     self.assertEqual(self.prime_factors.factorize(3), [3])
 
+  def test_four_has_two_twice_as_prime_factor(self):
+    self.assertEqual(self.prime_factors.factorize(4), [2, 2])
+
 if __name__ == '__main__':
   unittest.main()
