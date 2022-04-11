@@ -1,4 +1,4 @@
 
 class PrimeFactors:
   def factorize(self, number):
-    return [] if number == 1 else [2]
+    return [] if number == 1 else [number]
