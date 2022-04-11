@@ -31,5 +31,9 @@ class FizzBuzzTests(unittest.TestCase):
     big_prime_number = 104729
     self.assertEqual(self.prime_factors.factorize(big_prime_number), [big_prime_number])
 
+  def test_big_coprime_integers_have_only_themselves_as_prime_factors(self):
+    big_coprime_integers = [104717, 104723, 104729]
+    self.assertEqual(self.prime_factors.factorize(numpy.prod(big_coprime_integers)), big_coprime_integers)
+
 if __name__ == '__main__':
   unittest.main()
