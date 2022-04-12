@@ -36,7 +36,16 @@ describe('Prime number only have itself as prime factor', () => {
 });
 
 describe('Composite number has its prime factors', () => {
-  test('Four has two times the two as a prime factor', () => {
+  test('Four has two times the two as prime factors', () => {
     expect(primeFactors.factorize(4)).toEqual([2, 2]);
+  });
+  test('Six has two and three as prime factors', () => {
+    expect(primeFactors.factorize(6)).toEqual([2, 3]);
+  });
+  test('Twelve has two times two and three as prime factors', () => {
+    expect(primeFactors.factorize(12)).toEqual([2, 2, 3]);
+  });
+  test('Huge composite number has its prime factors', () => {
+    expect(primeFactors.factorize(454884251)).toEqual([89,137,37307]);
   });
 });
