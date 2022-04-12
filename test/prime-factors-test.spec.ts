@@ -12,4 +12,7 @@ describe('Base cases', () => {
   test('Zero has no prime factors', () => {
     expect(primeFactors.factorize(0)).toEqual([]);
   });
+  test('One has no prime factors', () => {
+    expect(primeFactors.factorize(1)).toEqual([]);
+  });
 });
