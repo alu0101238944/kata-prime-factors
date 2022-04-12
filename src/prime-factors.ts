@@ -1,6 +1,6 @@
 
 export class PrimeFactors {
   factorize(n: number) {
-    return n === 2 ? [n] : [];
+    return n > 1 ? [n] : [];
   };
 };
