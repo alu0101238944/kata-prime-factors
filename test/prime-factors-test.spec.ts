@@ -34,3 +34,9 @@ describe('Prime number only have itself as prime factor', () => {
     expect(primeFactors.factorize(115648555991)).toEqual([115648555991]);
   });
 });
+
+describe('Composite number has its prime factors', () => {
+  test('Four has two times the two as a prime factor', () => {
+    expect(primeFactors.factorize(4)).toEqual([2, 2]);
+  });
+});
