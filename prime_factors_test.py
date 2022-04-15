@@ -11,14 +11,14 @@ class PrimeFactorsTest(unittest.TestCase):
     self.assertEqual(PrimeFactors(2).get_prime_factors(), [2])
 
   def test_powers_of_two_has_only_twos_as_prime_factors(self):
-    for power in range(1, 11):
+    for power in range(1, 6):
       prime_factors_value = PrimeFactors(2 ** power).get_prime_factors()
       expected = [2] * power
 
       self.assertEqual(prime_factors_value, expected)
 
   def test_powers_of_three_has_only_threes_as_prime_factors(self):
-    for power in range(1, 11):
+    for power in range(1, 6):
       prime_factors_value = PrimeFactors(3 ** power).get_prime_factors()
       expected = [3] * power
 

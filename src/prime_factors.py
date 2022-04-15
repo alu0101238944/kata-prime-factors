@@ -1,6 +1,4 @@
 
-from math import sqrt, floor
-
 class PrimeFactors():
   def __init__(self, number):
     if number > 1:
