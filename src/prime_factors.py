@@ -6,3 +6,5 @@ class PrimeFactors():
     else:
       raise ValueError('Numbers smaller than 2 have no prime factors')
 
+  def get_prime_factors(self):
+    return [self.number]
