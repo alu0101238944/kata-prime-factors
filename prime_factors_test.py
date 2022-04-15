@@ -24,5 +24,13 @@ class PrimeFactorsTest(unittest.TestCase):
 
       self.assertEqual(prime_factors_value, expected)
 
+  def test_big_number_has_its_prime_factors(self):
+    big_number = 7 * 11 * 17 # 1309
+    self.assertEqual(PrimeFactors(big_number).get_prime_factors(), [7, 11, 17])
+  
+  def test_huge_number_has_its_prime_factors(self):
+    big_number = 2 * 3 * 5 * 7 * 11 * 23 # 53130
+    self.assertEqual(PrimeFactors(big_number).get_prime_factors(), [2,  3,  5,  7,  11,  23])
+
 if __name__ == "__main__":
   unittest.main()
