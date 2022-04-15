@@ -17,5 +17,12 @@ class PrimeFactorsTest(unittest.TestCase):
 
       self.assertEqual(prime_factors_value, expected)
 
+  def test_powers_of_three_has_only_threes_as_prime_factors(self):
+    for power in range(1, 11):
+      prime_factors_value = PrimeFactors(3 ** power).get_prime_factors()
+      expected = [3] * power
+
+      self.assertEqual(prime_factors_value, expected)
+
 if __name__ == "__main__":
   unittest.main()
